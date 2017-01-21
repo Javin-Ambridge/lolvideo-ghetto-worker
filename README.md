@@ -1,0 +1,1 @@
+This is a worker node file to refresh videos more frequently, while always keeping the API up for user requests. This is not a RabbitMQ server connected to the API because as of now that is not necessary.
