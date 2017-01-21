@@ -35,7 +35,7 @@ require('./app/routes')(router); // configure our routes
 // startup our app at http://localhost:3000
 app.listen(port);
 
-var textSched = later.parse.text('every 15 min');
+var textSched = later.parse.text('every 1 min');
 
 var timer2 = later.setInterval(function() {
     refreshVideos();
@@ -44,6 +44,7 @@ var timer2 = later.setInterval(function() {
 var refreshVideos = function() {
     var db = firebase.database();
     var ref = db.ref('/videos');
+    console.log('over here');
     ref.once("value", function(vids) {
         startSeries(vids);
     });
