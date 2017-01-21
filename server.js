@@ -1,6 +1,4 @@
 // server.js
-require('newrelic');
-
 // modules =================================================
 var express        = require('express');  
 var app            = express();
