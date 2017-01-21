@@ -1,4 +1,5 @@
 // server.js
+require('newrelic');
 
 // modules =================================================
 var express        = require('express');  
@@ -10,6 +11,7 @@ var youTube = new YouTube();
 youTube.setKey('AIzaSyC8cU2wC_I1MxQ70AJF7o65hCSzCifyOtE');
 var firebase       = require("firebase");
 var Playlists = require('./config/playlists');
+
 
 var consoleTag = '[VIDEO]: ';
 var locked = false;
