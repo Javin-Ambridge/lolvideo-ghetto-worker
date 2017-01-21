@@ -35,7 +35,7 @@ require('./app/routes')(router); // configure our routes
 // startup our app at http://localhost:3000
 app.listen(port);
 
-var textSched = later.parse.text('every 1 min');
+var textSched = later.parse.text('every 15 min');
 
 var timer2 = later.setInterval(function() {
     refreshVideos();
