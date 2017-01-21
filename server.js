@@ -114,6 +114,19 @@ function recurseNextPages(pt, playlistID, plid, cvl, callback) {
     });
 }
 
+function videoModel(ID, NAME, INFO, YEAR, AWESOMEN, FUNSTOMPN, REGION, DATE){
+    return {
+        id: ID,
+        name: NAME,
+        info: INFO,
+        year: YEAR,
+        awesomeN: AWESOMEN,
+        funstompN: FUNSTOMPN,
+        region: REGION,
+        created_at: DATE
+    };
+}   
+
 function startSeries(cvl) {
     if (locked) {
         return;
